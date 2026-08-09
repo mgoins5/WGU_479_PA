@@ -12,13 +12,21 @@ html {
     font-size: 100%;
 }
 
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
 body {
     line-height: 1.2rem;
 }
 
-img {
+html, body {
+    height: 100%;
+}
+
+img, picture, svg {
     max-width: 100%;
-    height: auto;
+    display: block;
 }
 
 ul, ol {
@@ -27,4 +35,17 @@ ul, ol {
 
 a {
     text-decoration: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
