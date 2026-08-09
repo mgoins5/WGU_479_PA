@@ -2,3 +2,81 @@
 
 /* Styles page */
 
+:root {
+    --clr-primary-500: hsl(208, 100%, 25%) /* #004480 */;
+    --clr-primary-400: hsl(208, 100%, 21%) /* #003b6d */;
+    --clr-primary-300: hsl(208, 100%, 15%) /* #00294d */;
+
+    --clr-secondary-500: hsl(210, 50%, 65%) /* #79a6d2 */;
+    --clr-secondary-400: hsl(210, 50%, 60%) /* #6699cc */; 
+    --clr-secondary-300:  hsl(210, 50%, 55%) /* #538cc6 */;
+
+    --clr-primaryaccent-500: hsl(0, 0%, 45%) /* #737373 */;
+    --clr-primaryaccent-400: hsl(0, 0%, 40%) /* #676767 */;
+    --clr-primaryaccent-300: hsl(0, 0%, 35%) /* #595959 */;
+
+    --clr-secondaryaccent-500: hsl(0, 0%, 80%) /* #cccccc */;
+    --clr-secondaryaccent-400: hsl(0, 0%, 74%) /* #bdbdbd */;
+    --clr-secondaryaccent-300: hsl(0, 0%, 70%) /* #b3b3b3 */;
+
+    --clr-neutral-900: hsl(0, 0%, 100%) /* #ffffff */;
+    --clr-neutral-100: hsl(0, 0%, 0%) /* #000000 */;
+
+    --ff-primary: Verdana, Geneva, sans-serif;
+
+    --ff-body: var(--ff-primary);
+    --ff-heading: var(--ff-primary);
+
+    --fw-regular: 400;
+    --fw-semi-bold: 500;
+    --fw-bold: 700;
+
+    --fs-300: 0.875rem;
+    --fs-400: 1rem;
+    --fs-425: 1.125rem;
+    --fs-500: 1.5rem;
+    --fs-600: 1.875rem;
+    --fs-700: 2rem;
+    --fs-800: 2.25rem;
+    --fs-900: 2.5rem;
+
+    --fs-body: var(--fs-400);
+    --fs-nav: var(--fs-425);
+    --fs-button: var(--fs-300);
+}
+
+/* Utility Classes */
+
+.text-primary-400 {
+    color: var(--clr-primary-400)
+}
+.text-secondary-400 {
+    color: var(--clr-secondary-400)
+}
+.text-primaryaccent-400 {
+    color: var(--clr-primaryaccent-400)
+}
+.text-secondaryaccent-400 {
+    color: var(--clr-primaryaccent-400)
+}
+.bg-primary-400 {
+    background-color: var(--clr-primary-400)
+}
+.bg-secondary-400 {
+    background-color: var(--clr-secondary-400)
+}
+.bg-primaryaccent-400 {
+    background-color: var(--clr-primaryaccent-400)
+}
+.bg-secondaryaccent-400 {
+    background-color: var(--clr-primaryaccent-400)
+}
+
+.fw-bold {font-weight: var(--fw-bold);}
+.fw-semi-bold {font-weight: var(--fw-semi-bold);}
+.fw-regular {font-weight: var(--fw-regular);}
+
+.fs-300 {font-size: var(--fs-300);}
+.fs-400 {font-size: var(--fs-400);}
+.fs-425 {font-size: var(--fs-425);}
+.fs-500 {font-size: var(--fs-500);}
