@@ -9,37 +9,37 @@
     </head>
 
 
-<body>
-    <header>
-        <div class="homePageHeader">
+<body class="container">
+    <header class="homePageHeader">
+        <div class="headerContainer | bg-primaryaccent-400 | padding-block-600 | padding-inline-600">
             <div>
-                <img id="companyLogo" src="images/PPP.png" alt="Company logo of three 
+                <a href="index.html"><img id="companyLogo" src="images/PPP.png" alt="Company logo of three 
                 staggered P's that reads 'Paradigm Pet Professionals' under the roof 
-                of the last P with colors of midnight blue, blue sky, and dim gray."/>
+                of the last P with colors of midnight blue, blue sky, and dim gray."/></a>
             </div>
             <div class="searchBarContainer">
                 <!-- Button and search bar here -->
                  <form class="searchBar">
-                    <button class="searchBarSubmit" type="submit">Fetch</button>
+                    <button class="searchBarSubmit | padding-inline-700" type="submit">Fetch</button>
                     <input type="search" id="searchBar" name="searchBar" 
                     placeholder="Find something...">
                  </form>
             </div>
         </div>
-        <nav class="horizontal" id ="primaryNavigation">
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="pages/Cats.html">Cats</a></li>
-                <li><a href="pages/Dogs.html">Dogs</a></li>
-                <li><a href="pages/Birds.html">Birds</a></li>
-                <li><a href="pages/ScheduleConsultation.html">Schedule Consultation</a></li>
-                <li><a href="pages/FAQs.html">FAQs</a></li>
+        <nav class="primaryNavigation | bg-secondary-400">
+            <ul role="list" class="navList">
+                <li><a href="index.html" class="padding-inline-600">Home</a></li>
+                <li><a href="pages/Cats.html" class="padding-inline-200 | firstNav">Cats</a></li>
+                <li><a href="pages/Dogs.html" class="padding-inline-200">Dogs</a></li>
+                <li><a href="pages/Birds.html" class="padding-inline-200 | lastNav">Birds</a></li>
+                <li><a href="pages/ScheduleConsultation.html" class="padding-inline-600">Schedule Consultation</a></li>
+                <li><a href="pages/FAQs.html" class="padding-inline-600">FAQs</a></li>
             </ul>
         </nav>
     </header>
-    <article class="content">
+    <article class="content | bg-secondaryaccent-400 | padding-block-600 | padding-inline-600">
         <p>
-            Pets are nature's gift to humanity. It has been scientifically proven 
+            <span class="largeWord">Pets</span> are nature's gift to humanity. It has been scientifically proven 
             that opening our homes and hearts to a pet increases our longevity and 
             improves our overall quality of life as well as the lives of our pets. At 
             Pet Paradigm Professionals, our mission is to offer resources to help you 
@@ -49,23 +49,25 @@
             current and prospective pet owners as well as group presentations designed 
             for veterinary, pet shelter, and pet breeding professionals.
         </p>
-        <p>
-            Looking for basic pet care advice for the most common type of pets? Need 
+        <p class="top-padding-300">
+            <span class="largeWord">Looking</span> for basic pet care advice for the most common type of pets? Need 
             additional help determining which type of pet is right for you and your 
             family? We will work with you and provide tailored evidence-based pet care 
             to ensure lifelong health and wellness of your new companion. 
         </p>
-        <p>
-            Looking for your new best friend? The following organizations can help you 
+        <p class="top-padding-300">
+            <span class="largeWord">Looking</span> for your new best friend? The following organizations can help you 
             find and adopt the perfect companion:
-            •	General Pet Resources: https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources
-            •	ASPCA: https://www.aspca.org/ 
-            •	Fish Rescue: https://www.sterlingshelter.org/humane-society/koi-fish-rescue/
-            •	Snake Rescue: https://savethesnakes.org/snakerescuecall/
-            •	Bird Rescue: https://ftlob.rescuegroups.org/
+            <ul class="resourceList">
+                <li>•	<a href="https://bestfriends.org/pet-care-resources/issues/pet-adoption-resources">General Pet Resources</a></li>
+                <li>•	<a href="https://www.aspca.org/">ASPCA</a></li>
+                <li>•	<a href="https://www.sterlingshelter.org/humane-society/koi-fish-rescue/">Fish Rescue</a></li>
+                <li>•	<a href="https://savethesnakes.org/snakerescuecall/">Snake Rescue</a></li>
+                <li>•	<a href="https://ftlob.rescuegroups.org/">Bird Rescue</a></li>
+            </ul>
         </p>
-        <p>
-            We are also happy to help you navigate the adoption process! We will guide 
+        <p class="top-padding-300">
+            <span class="largeWord">We</span> are also happy to help you navigate the adoption process! We will guide 
             you through each step in the process from determining which type of pet is 
             best suited for your family and home environment, to completing the necessary 
             paperwork, to bringing your new loved one home. Please fill out our contact 
@@ -73,30 +75,30 @@
             schedule a consultation. All fields are required.
         </p> 
     </article>
-    <div>
+    <div class="consultationButtonDiv | bg-secondaryaccent-400 | padding-block-600">
         <!-- Button to schedule a consultation here -->
-         <a href="pages/ScheduleConsultation.html" class="ScheduleConsultationButton">Schedule Consultation</a>
+         <a href="pages/ScheduleConsultation.html" class="cta | scheduleConsultationButton">Schedule Consultation</a>
     </div>
-    <footer>
+    <footer class="footer | bg-primaryaccent-400">
         <div>
             <!-- Company Name TextBox here -->
-            <p id="footerInfo">
+            <p class="footerInfo">
                 Paradigm Pet Professionals
             </p>
         </div>
-        <nav class="horizontal" id="secondaryNavigation">
-            <ul>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
-                <li></li>
+        <nav class="secondaryNavigation">
+            <ul role="list" class="navList">
+                <li><a href="index.html" class="padding-inline-600">Home</a></li>
+                <li><a href="pages/Cats.html" class="padding-inline-200 | firstNav">Cats</a></li>
+                <li><a href="pages/Dogs.html" class="padding-inline-200">Dogs</a></li>
+                <li><a href="pages/Birds.html" class="padding-inline-200 | lastNav">Birds</a></li>
+                <li><a href="pages/ScheduleConsultation.html" class="padding-inline-600">Schedule Consultation</a></li>
+                <li><a href="pages/FAQs.html" class="padding-inline-600">FAQs</a></li>
             </ul>
         </nav>
         <div>
             <!-- Copyright here -->
-             <p id="footerInfo">
+             <p class="footerInfo">
                 Copyright &#169; PPP 2026
              </p>
         </div>

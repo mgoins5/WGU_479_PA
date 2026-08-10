@@ -4,23 +4,25 @@
 
 :root {
     --clr-primary-500: hsl(208, 100%, 25%) /* #004480 */;
-    --clr-primary-400: hsl(208, 100%, 21%) /* #003b6d */;
+    --clr-primary-400: hsl(208, 100%, 21%) /* #003b6d Midnight Blue */;
     --clr-primary-300: hsl(208, 100%, 15%) /* #00294d */;
 
     --clr-secondary-500: hsl(210, 50%, 65%) /* #79a6d2 */;
-    --clr-secondary-400: hsl(210, 50%, 60%) /* #6699cc */; 
+    --clr-secondary-400: hsl(210, 50%, 60%) /* #6699cc Blue Sky */; 
     --clr-secondary-300:  hsl(210, 50%, 55%) /* #538cc6 */;
 
     --clr-primaryaccent-500: hsl(0, 0%, 45%) /* #737373 */;
-    --clr-primaryaccent-400: hsl(0, 0%, 40%) /* #676767 */;
+    --clr-primaryaccent-400: hsl(0, 0%, 40%) /* #676767 Dim Gray */;
     --clr-primaryaccent-300: hsl(0, 0%, 35%) /* #595959 */;
+    --clr-primaryaccent-200: hsl(0, 0%, 30%);
+    --clr-primaryaccent-100: hsl(0, 0%, 15%);
 
     --clr-secondaryaccent-500: hsl(0, 0%, 80%) /* #cccccc */;
-    --clr-secondaryaccent-400: hsl(0, 0%, 74%) /* #bdbdbd */;
+    --clr-secondaryaccent-400: hsl(0, 0%, 74%) /* #bdbdbd Silver */;
     --clr-secondaryaccent-300: hsl(0, 0%, 70%) /* #b3b3b3 */;
 
-    --clr-neutral-900: hsl(0, 0%, 100%) /* #ffffff */;
-    --clr-neutral-100: hsl(0, 0%, 0%) /* #000000 */;
+    --clr-neutral-900: hsl(0, 0%, 0%) /* #000000 */;
+    --clr-neutral-100: hsl(0, 0%, 100%) /* #ffffff */;
 
     --ff-primary: Verdana, Geneva, sans-serif;
 
@@ -43,33 +45,45 @@
     --fs-body: var(--fs-400);
     --fs-nav: var(--fs-425);
     --fs-button: var(--fs-300);
+
+    --size-100: .25rem;
+    --size-200: .5rem;
+    --size-300: .75rem;
+    --size-400: 1rem;
+    --size-500: 1.25rem;
+    --size-600: 1.5rem;
+    --size-700: 2rem;
+    --size-800: 2.5rem;
+    --size-900: 3rem;
+    --size-925: 4rem;
+    --size-950: 5rem;
 }
 
 /* Utility Classes */
 
 .text-primary-400 {
-    color: var(--clr-primary-400)
+    color: var(--clr-primary-400)/* #003b6d Midnight Blue */
 }
 .text-secondary-400 {
-    color: var(--clr-secondary-400)
+    color: var(--clr-secondary-400)/* #bdbdbd Silver */
 }
 .text-primaryaccent-400 {
-    color: var(--clr-primaryaccent-400)
+    color: var(--clr-primaryaccent-400)/* #676767 Dim Gray */
 }
 .text-secondaryaccent-400 {
-    color: var(--clr-primaryaccent-400)
+    color: var(--clr-secondaryaccent-400)/* #bdbdbd Silver */
 }
 .bg-primary-400 {
-    background-color: var(--clr-primary-400)
+    background-color: var(--clr-primary-400)/* #003b6d Midnight Blue */
 }
 .bg-secondary-400 {
-    background-color: var(--clr-secondary-400)
+    background-color: var(--clr-secondary-400)/* #bdbdbd Silver */
 }
 .bg-primaryaccent-400 {
-    background-color: var(--clr-primaryaccent-400)
+    background-color: var(--clr-primaryaccent-400)/* #676767 Dim Gray */
 }
 .bg-secondaryaccent-400 {
-    background-color: var(--clr-primaryaccent-400)
+    background-color: var(--clr-secondaryaccent-400)/* #bdbdbd Silver */
 }
 
 .fw-bold {font-weight: var(--fw-bold);}
@@ -80,3 +94,268 @@
 .fs-400 {font-size: var(--fs-400);}
 .fs-425 {font-size: var(--fs-425);}
 .fs-500 {font-size: var(--fs-500);}
+
+.top-padding-300 {
+    padding-top: var(--size-300);
+}
+
+.padding-block-300 {
+    padding-block: var(--size-300)
+}
+
+.padding-block-400 {
+    padding-block: var(--size-400)
+}
+/*  --size-100: .25rem; --size-200: .5rem; --size-300: .75rem;
+    --size-400: 1rem; --size-500: 1.25rem; --size-600: 1.5rem;
+    --size-700: 2rem; --size-800: 2.5rem; --size-900: 3rem;
+    --size-925: 4rem; --size-950: 5rem;*/
+.padding-block-500 {
+    padding-block: var(--size-500)
+}
+.padding-block-600 {
+    padding-block: var(--size-600)
+}
+.padding-block-900 {
+    padding-block: var(--size-900)
+}
+.padding-inline-200 {
+    padding-inline: var(--size-200)
+}
+.padding-inline-300 {
+    padding-inline: var(--size-300)
+}
+.padding-inline-400 {
+    padding-inline: var(--size-400)
+}
+.padding-inline-500 {
+    padding-inline: var(--size-500)
+}
+.padding-inline-600 {
+    padding-inline: var(--size-600)
+}
+.padding-inline-700 {
+    padding-inline: var(--size-700)
+}
+.padding-inline-900 {
+    padding-inline: var(--size-900)
+}
+
+.container {
+    --max-width: 1440px;
+    --padding: 1rem;
+
+    width: min(var(--max-width), 100% - var(--padding) * 2);
+    margin-inline: auto;
+}
+
+/* General Styling */
+
+body {
+    font-size: var(--fs-body);
+    font-family: var(--ff-body);
+    color: var(--clr-neutral-900);
+    background-color: black;
+}
+
+.headerContainer, .navList, footer {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+/* Header Styles */
+
+.headerContainer {
+    height: 11rem;
+}
+
+#companyLogo {
+    max-height: 8rem;
+}
+
+.searchBarContainer {
+    margin-left: auto;
+}
+
+#searchBar, .searchBarSubmit {
+    height: 3rem;
+    font-size: var(--fs-400);
+    gap: 1rem;
+}
+
+/* NavBar Styles */
+
+.navList {
+    justify-content: center;
+}
+
+.firstNav{
+    padding-left: 1.5rem;
+}
+
+.lastNav {
+    padding-right: 1.5rem;
+}
+
+.primaryNavigation {
+    height: 2rem;
+    align-content: center;
+}
+
+.primaryNavigation > .navList > li > a {
+    color: var(--clr-neutral-900);
+}
+
+.secondaryNavigation > .navList > li > a {
+    color: var(--clr-neutral-100);
+}
+
+/* Content Styling */
+
+.content {
+    letter-spacing: -0.01em;
+}
+
+.largeWord {
+    font-size: var(--fs-500);
+    font-weight: var(--fw-semi-bold);
+    letter-spacing: -0.02em;
+}
+
+.resourceList > li > a {
+    color: var(--clr-neutral-900);
+    text-decoration: underline;
+}
+
+.consultationButtonDiv {
+    text-align: center;
+    padding-bottom: 3rem;
+}
+
+.scheduleConsultationButton {
+    border-radius: 100vmax;
+    padding: 1em 1.75em;
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-button);
+}
+
+/* Footer Styling */
+
+.footer {
+    height: 2rem;
+    justify-content: space-between;
+}
+
+.footerInfo {
+    color: var(--clr-primaryaccent-100);
+}
+
+
+/* Smaller screen styling */
+
+@media only screen and (max-width: 1035px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        padding: 0.75rem;
+        gap: 0.75rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    
+    .homePageHeader, .headerContainer {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    height: auto;
+    width: 100%;
+   }
+
+   .headerContainer {
+        gap: 1.5rem;
+        padding: 1.5rem;
+   }
+
+   .primaryNavigation {
+        padding: 1rem;
+        width: 100%;
+        height: auto;
+   }
+
+   .primaryNavigation > .navList {
+        row-gap: 0.5rem;
+   }
+
+   .searchBarContainer {
+        margin-left: 0;
+   }
+
+    .secondaryNavigation * {
+        padding-inline: 0;
+   }
+
+   .secondaryNavigation > .navList {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        padding: 0;
+        row-gap: 0.5rem;
+   }
+}
+
+/* Mobile Styling */
+
+@media only screen and (max-width: 480px) {
+
+    .homePageHeader, .headerContainer, .primaryNavigation {
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row wrap;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+        height: auto;
+   }
+
+   .headerContainer {
+        gap: 1.5rem;
+        padding: 1.5rem;
+   }
+
+   .primaryNavigation {
+        padding: 1rem;
+   }
+
+   .searchBarContainer {
+        margin-left: 0;
+   }
+
+}
+
+@media only screen and (max-width: 410px) {
+
+    .searchBar {
+        display: -webkit-flex;
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+    }
+
+}
