@@ -95,8 +95,8 @@
 .fs-425 {font-size: var(--fs-425);}
 .fs-500 {font-size: var(--fs-500);}
 
-.top-padding-300 {
-    padding-top: var(--size-300);
+.top-padding-400 {
+    padding-top: var(--size-400);
 }
 
 .padding-block-300 {
@@ -150,6 +150,12 @@
 }
 
 /* General Styling */
+/*  
+
+    cats, dogs, birds, faqs, and schedule consultation
+    schedule consultation form built out and javascripted as well.
+
+*/
 
 body {
     font-size: var(--fs-body);
@@ -186,6 +192,13 @@ body {
     gap: 1rem;
 }
 
+.searchBarSubmit:hover {
+    background-color: var(--clr-primary-400);
+    color: var(--clr-neutral-100);
+    border: none;
+    transform: scale(1.05);
+}
+
 /* NavBar Styles */
 
 .navList {
@@ -201,16 +214,38 @@ body {
 }
 
 .primaryNavigation {
-    height: 2rem;
     align-content: center;
 }
 
 .primaryNavigation > .navList > li > a {
     color: var(--clr-neutral-900);
+    height: 2rem;
+    align-content: center;
+    display: inline-block;
+    transform-origin: center;
+}
+
+.active {
+    background-color: var(--clr-primary-400) !important;
+    color: var(--clr-neutral-100) !important;
+}
+
+.primaryNavigation > .navList > li > a:hover {
+    transform: scale(1.1);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
 }
 
 .secondaryNavigation > .navList > li > a {
     color: var(--clr-neutral-100);
+    display: inline-block;
+    transform-origin: center;
+}
+
+.secondaryNavigation > .navList > li > a:hover {
+    transform: scale(1.1);
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-secondary-400);
 }
 
 /* Content Styling */
@@ -228,6 +263,15 @@ body {
 .resourceList > li > a {
     color: var(--clr-neutral-900);
     text-decoration: underline;
+    display: inline-block;
+    color: var(--clr-primary-400);
+    transform-origin: center;
+}
+
+.resourceList > li > a:hover {
+    transform: scale(1.1);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-primary-400);
 }
 
 .consultationButtonDiv {
@@ -237,11 +281,19 @@ body {
 
 .scheduleConsultationButton {
     border-radius: 100vmax;
-    padding: 1em 1.75em;
+    padding: 0.75em 1.5em;
     background-color: var(--clr-primary-400);
     color: var(--clr-neutral-100);
     font-weight: var(--fw-bold);
     font-size: var(--fs-button);
+    display: inline-block;
+    transform-origin: center;
+}
+
+.scheduleConsultationButton:hover {
+    transform: scale(1.2);
+    color: var(--clr-neutral-900);
+    background-color: var(--clr-secondary-400);   
 }
 
 /* Footer Styling */
@@ -252,7 +304,7 @@ body {
 }
 
 .footerInfo {
-    color: var(--clr-primaryaccent-100);
+    color: var(--clr-neutral-900);
 }
 
 
