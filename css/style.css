@@ -161,9 +161,6 @@
 /* General Styling */
 /*  
 
-    style content for:
-    cats, dogs, birds, faqs
-
     schedule consultation form built out and javascripted as well.
 
 */
@@ -175,7 +172,7 @@ body {
     background-color: black;
 }
 
-.headerContainer, .navList, footer {
+.headerContainer, .navList, footer, .centeredImages {
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: row wrap;
@@ -192,6 +189,16 @@ body {
     transform: scale(1.1);
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
+}
+
+.images {
+    padding: 8px;
+    max-width: 250px;
+    height: auto;
+}
+
+.centeredImage img, .centeredImages img {
+    margin: 0 auto;
 }
 
 /* Header Styles */
