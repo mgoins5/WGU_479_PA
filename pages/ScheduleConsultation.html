@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="../css/reset.css" rel="stylesheet" />
         <link href="../css/style.css" rel="stylesheet" />
+        <script src="../js/submitForm.js"></script>
     </head>
 
 
@@ -44,7 +45,7 @@
             <section>
                 <div class="formGroup">
                     <label for="name">Name:</label>
-                    <input name="username" class="needsChecked" placeholder="John Doe" id="name" type="text" required/>
+                    <input name="username" class="needsChecked" placeholder="John Doe" id="username" type="text" required/>
                 </div>
                 <div class="formGroup">
                     <label for="number">Number:</label>
@@ -56,7 +57,7 @@
                 </div>
                 <div class="formGroup">
                     <label for="confirmEmail">Confirm Email:</label>
-                    <input name="email" class="needsChecked" placeholder="Enter email address" id="email" type="email" required/>
+                    <input name="confirmEmail" class="needsChecked" placeholder="Enter email address" id="confirmEmail" type="email" required/>
                 </div>
                 <div class="formGroup">
                     <label for="timezone">Time Zone:</label>
@@ -78,8 +79,9 @@
                     <label for="contactReason">Enter reason for consultation:</label>
                     <textarea name="contactReason" class="needsChecked" placeholder="Enter information..." id="contactReason" rows="10" cols="90" type="text" required></textarea>
                 </div>
+                <p id="formMessage"></p>
                 <div class="formButtons">
-                    <input class="submitFormButton" type="submit" id="submit" onclick="submitContactForm()" value="Submit Form" />
+                    <input class="submitFormButton" type="submit" id="submit" onclick="submitContactForm(event)" value="Submit Form" />
                     <input class="clearFormButton" type="button" onclick="clearForm()" id="clear" value="Clear" />
                 </div>
             </section>

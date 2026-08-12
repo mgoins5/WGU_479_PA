@@ -24,6 +24,9 @@
     --clr-neutral-900: hsl(0, 0%, 0%) /* #000000 */;
     --clr-neutral-100: hsl(0, 0%, 100%) /* #ffffff */;
 
+    --clr-success: hsl(138, 100%, 29%);
+    --clr-error: hsl(0, 100%, 29%);
+
     --ff-primary: Verdana, Geneva, sans-serif;
 
     --ff-body: var(--ff-primary);
@@ -174,6 +177,11 @@
 }
 
 /* General Styling */
+
+html {
+    overflow: -moz-scrollbars-vertical; 
+    overflow-y: scroll;
+}
 
 body {
     font-size: var(--fs-body);
@@ -390,6 +398,31 @@ input, button, select, textarea {
 
 .contactText {
     text-align: center;
+}
+
+input:user-valid {
+    outline-color: var(--clr-success);
+}
+
+input:user-invalid {
+    outline-color: var(--clr-error);
+}
+
+form > section > div > input {
+    border-radius: 100vmax;
+    border: none;
+    padding: 5px;
+    outline: 3px solid var(--clr-primaryaccent-500);
+}
+
+.formSuccess {
+    width: fit-content;
+    margin-inline: auto;
+    border-radius: 100vmax;
+    background-color: var(--clr-success);
+    font-weight: var(--fw-semi-bold);
+    padding: 0.5rem 1rem;
+    color: white;
 }
 
 .submitFormButton {
