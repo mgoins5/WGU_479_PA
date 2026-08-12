@@ -370,17 +370,21 @@ input, button, select, textarea {
 #contactForm > section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.25rem;
 }
 
 .formGroup {
     display: grid;
-    gap: 1 rem;
+    gap: 1rem;
 }
 
 .evenColumns {
     display: grid;
-    gap: 1 rem;
+    gap: 1rem;
+}
+
+.evenColumns > section > div {
+    gap: 0.125rem;
 }
 
 .formButtons {
@@ -451,7 +455,7 @@ form > section > div > input {
 
 .footer {
     height: 2rem;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .footerInfo {
