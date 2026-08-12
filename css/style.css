@@ -108,6 +108,21 @@
     padding-top: var(--size-100);
 }
 
+.bottom-padding-600 {
+    padding-bottom: var(--size-600);
+}
+.bottom-padding-400 {
+    padding-bottom: var(--size-400);
+}
+.bottom-padding-200 {
+    padding-bottom: var(--size-200);
+}
+.bottom-padding-100 {
+    padding-bottom: var(--size-100);
+}
+
+
+
 .padding-block-300 {
     padding-block: var(--size-300)
 }
@@ -159,11 +174,6 @@
 }
 
 /* General Styling */
-/*  
-
-    schedule consultation form built out and javascripted as well.
-
-*/
 
 body {
     font-size: var(--fs-body);
@@ -183,6 +193,7 @@ body {
 .contentLink {
     text-decoration: underline;
     display: inline-block;
+    color: var(--clr-primary-400);
 }
 
 .contentLink:hover {
@@ -313,7 +324,7 @@ body {
     padding-bottom: 3rem;
 }
 
-.scheduleConsultationButton {
+.scheduleConsultationButton, .submitFormButton {
     border-radius: 100vmax;
     padding: 0.75em 1.5em;
     background-color: var(--clr-primary-400);
@@ -324,17 +335,90 @@ body {
     transform-origin: center;
 }
 
-.scheduleConsultationButton:hover {
+.scheduleConsultationButton:hover, .submitFormButton:hover {
     transform: scale(1.2);
     color: var(--clr-neutral-900);
     background-color: var(--clr-secondary-400);   
+}
+
+/* Form Styling */
+
+#contactFormHeader {
+    justify-self: center;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+input, button, select, textarea {
+    font: inherit;
+}
+
+#contactForm {
+    display: grid;
+    gap: 1rem;
+}
+
+#contactForm > section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.formGroup {
+    display: grid;
+    gap: 1 rem;
+}
+
+.evenColumns {
+    display: grid;
+    gap: 1 rem;
+}
+
+.formButtons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.contactImages {
+    height: auto;
+    width: min(500px, 100%);
+    margin: 0 auto
+}
+
+.contactText {
+    text-align: center;
+}
+
+.submitFormButton {
+    border: none;
+}
+
+.clearFormButton {
+    border-radius: 100vmax;
+    padding: 0.75em 1.5em;
+    background-color: var(--clr-neutral-100);
+    color: var(--clr-primary-400);
+    font-weight: var(--fw-bold);
+    font-size: var(--fs-button);
+    display: inline-block;
+    transform-origin: center;
+    border: none;
+}
+
+.clearFormButton:hover {
+    transform: scale(1.2);
+    color: var(--clr-secondary-400);
+    background-color: var(--clr-neutral-900);
 }
 
 /* Footer Styling */
 
 .footer {
     height: 2rem;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .footerInfo {
@@ -343,6 +427,13 @@ body {
 
 
 /* Smaller screen styling */
+
+@media only screen and (min-width: 1036px) {
+    .evenColumns {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+}
 
 @media only screen and (max-width: 1035px) {
     .footer {
@@ -356,7 +447,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 730px) {
     
     .homePageHeader, .headerContainer {
     display: -webkit-flex;
@@ -435,7 +526,7 @@ body {
 
 }
 
-@media only screen and (max-width: 410px) {
+@media only screen and (max-width: 430px) {
 
     .searchBar {
         display: -webkit-flex;

@@ -37,13 +37,64 @@
             </ul>
         </nav>
     </header>
-    <article class="content | bg-secondaryaccent-400 | padding-block-600 | padding-inline-600">
+    <article class="content | bg-secondaryaccent-400 | padding-block-600 | padding-inline-600 | contactPage">
+        <p class="fs-500 | bottom-padding-600" id="contactFormHeader">Schedule a consultation today!</p>
 
+        <form action="" method="post" enctype="text/plain" id="contactForm" class="evenColumns">
+            <section>
+                <div class="formGroup">
+                    <label for="name">Name:</label>
+                    <input name="username" class="needsChecked" placeholder="John Doe" id="name" type="text" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="number">Number:</label>
+                    <input name="number" class="needsChecked" placeholder="Enter phone number" id="number" type="tel" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="email">Email:</label>
+                    <input name="email" class="needsChecked" placeholder="Enter email address" id="email" type="email" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="confirmEmail">Confirm Email:</label>
+                    <input name="email" class="needsChecked" placeholder="Enter email address" id="email" type="email" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="timezone">Time Zone:</label>
+                    <input name="timezone" class="needsChecked" placeholder="Enter time zone" id="timezone" type="text" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="petName">Pet Name:</label>
+                    <input name="petName" class="needsChecked" placeholder="Enter pet's name" id="petName" type="text" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="petType">Pet Type:</label>
+                    <input name="petType" class="needsChecked" placeholder="Enter pet's type" id="petType" type="text" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="petAge">Pet Age:</label>
+                    <input name="petAge" class="needsChecked" placeholder="Enter pet's age" id="petAge" type="text" required/>
+                </div>
+                <div class="formGroup">
+                    <label for="contactReason">Enter reason for consultation:</label>
+                    <textarea name="contactReason" class="needsChecked" placeholder="Enter information..." id="contactReason" rows="10" cols="90" type="text" required></textarea>
+                </div>
+                <div class="formButtons">
+                    <input class="submitFormButton" type="submit" id="submit" onclick="submitContactForm()" value="Submit Form" />
+                    <input class="clearFormButton" type="button" onclick="clearForm()" id="clear" value="Clear" />
+                </div>
+            </section>
+            <section>
+                <img class="contactImages" src="../images/PPP.png" alt="Company logo of three 
+                staggered P's that reads 'Paradigm Pet Professionals' under the roof 
+                of the last P with colors of midnight blue, blue sky, and dim gray."/>
+                <p class="contactText">Paradigm Pet Professionals has 12 years' experience working with pet owners, certifications in pet health and nutrition, 
+                    and customer recognition for outstanding support </p>
+                <img class="contactImages" id="meeting" src="../images/Meeting.jpg" alt="Company meeting with one presenter and 5 others all with laptops around
+                a conference table.."/>
+                <p class="contactText">"Evidence-based pet care advice for every pet lover"</p>
+            </section>
+        </form>
     </article>
-    <div class="consultationButtonDiv | bg-secondaryaccent-400 | padding-block-600">
-        <!-- Button to schedule a consultation here -->
-         <a href="../pages/ScheduleConsultation.html" class="cta | scheduleConsultationButton">Schedule Consultation</a>
-    </div>
     <footer class="footer | bg-primaryaccent-400">
         <div>
             <!-- Company Name TextBox here -->
