@@ -181,13 +181,13 @@
 html {
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
+    background-color: black;
 }
 
 main {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
     color: var(--clr-neutral-900);
-    background-color: black;
 }
 
 .headerContainer, .navList, footer, .centeredImages {
