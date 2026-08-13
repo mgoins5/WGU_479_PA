@@ -183,7 +183,7 @@ html {
     overflow-y: scroll;
 }
 
-body {
+main {
     font-size: var(--fs-body);
     font-family: var(--ff-body);
     color: var(--clr-neutral-900);
@@ -459,7 +459,7 @@ form > section > div > input {
 }
 
 .footerInfo {
-    color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
 }
 
 
