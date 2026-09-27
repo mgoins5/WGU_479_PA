@@ -226,44 +226,10 @@ main {
     height: 11rem;
 }
 
-#companyLogo {
-    max-height: 8rem;
-}
-
-#companyLogo:hover {
-    transform: scale(1.05);
-}
-
-.searchBarContainer {
-    margin-left: auto;
-}
-
-#searchBar, .searchBarSubmit {
-    height: 3rem;
-    font-size: var(--fs-400);
-    gap: 1rem;
-}
-
-.searchBarSubmit:hover {
-    background-color: var(--clr-primary-400);
-    color: var(--clr-neutral-100);
-    border: none;
-    transform: scale(1.05);
-    cursor: pointer;
-}
-
 /* NavBar Styles */
 
 .navList {
     justify-content: center;
-}
-
-.firstNav{
-    padding-left: 1.5rem;
-}
-
-.lastNav {
-    padding-right: 1.5rem;
 }
 
 .primaryNavigation {
@@ -305,12 +271,6 @@ main {
 
 .content {
     letter-spacing: -0.01em;
-}
-
-.largeWord {
-    font-size: var(--fs-500);
-    font-weight: var(--fw-semi-bold);
-    letter-spacing: -0.02em;
 }
 
 .resourceList > li > a {
@@ -513,10 +473,6 @@ form > section > div > input {
         row-gap: 0.5rem;
    }
 
-   .searchBarContainer {
-        margin-left: 0;
-   }
-
     .secondaryNavigation * {
         padding-inline: 0;
    }
@@ -556,20 +512,5 @@ form > section > div > input {
    .primaryNavigation {
         padding: 1rem;
    }
-
-   .searchBarContainer {
-        margin-left: 0;
-   }
-
-}
-
-@media only screen and (max-width: 430px) {
-
-    .searchBar {
-        display: -webkit-flex;
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 0.5rem;
-    }
 
 }
