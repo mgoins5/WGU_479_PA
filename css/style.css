@@ -18,9 +18,9 @@
     --clr-primaryaccent-200: hsl(10, 59%, 87%) /* #f1d1ca */;
     --clr-primaryaccent-100: hsl(10, 59%, 82%) /* #ecbfb6 */;
 
-    --clr-secondaryaccent-500: hsl(0, 0%, 80%) /* #cccccc */;
-    --clr-secondaryaccent-400: hsl(0, 0%, 74%) /* #bdbdbd Silver */;
-    --clr-secondaryaccent-300: hsl(0, 0%, 70%) /* #b3b3b3 */;
+    --clr-secondaryaccent-500: hsl(350, 29%, 83%) /* #e0c7cb */;
+    --clr-secondaryaccent-400: hsl(350, 29%, 78%) /* #d7b7bc */;
+    --clr-secondaryaccent-300: hsl(350, 29%, 73%) /* #cea6ad */;
 
     --clr-neutral-900: hsl(0, 0%, 0%) /* #000000 */;
     --clr-neutral-100: hsl(0, 0%, 100%) /* #ffffff */;
@@ -66,28 +66,28 @@
 /* Utility Classes */
 
 .text-primary-400 {
-    color: var(--clr-primary-400)/* #003b6d Midnight Blue */
+    color: var(--clr-primary-400)/* #009eb3 */
 }
 .text-secondary-400 {
-    color: var(--clr-secondary-400)/* #bdbdbd Silver */
+    color: var(--clr-secondary-400)/* #8BA6E9  */
 }
 .text-primaryaccent-400 {
-    color: var(--clr-primaryaccent-400)/* #676767 Dim Gray */
+    color: var(--clr-primaryaccent-400)/* #F7E4E0 */
 }
 .text-secondaryaccent-400 {
-    color: var(--clr-secondaryaccent-400)/* #bdbdbd Silver */
+    color: var(--clr-secondaryaccent-400)/* #d7b7bc */
 }
 .bg-primary-400 {
-    background-color: var(--clr-primary-400)/* #003b6d Midnight Blue */
+    background-color: var(--clr-primary-400)/* #009eb3 */
 }
 .bg-secondary-400 {
-    background-color: var(--clr-secondary-400)/* #bdbdbd Silver */
+    background-color: var(--clr-secondary-400)/* #8BA6E9  */
 }
 .bg-primaryaccent-400 {
-    background-color: var(--clr-primaryaccent-400)/* #676767 Dim Gray */
+    background-color: var(--clr-primaryaccent-400)/* #F7E4E0 */
 }
 .bg-secondaryaccent-400 {
-    background-color: var(--clr-secondaryaccent-400)/* #bdbdbd Silver */
+    background-color: var(--clr-secondaryaccent-400)/* #d7b7bc */
 }
 
 .fw-bold {font-weight: var(--fw-bold);}
