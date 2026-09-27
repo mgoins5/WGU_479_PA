@@ -3,19 +3,20 @@
 /* Styles page */
 
 :root {
-    --clr-primary-500: hsl(208, 100%, 25%) /* #004480 */;
-    --clr-primary-400: hsl(208, 100%, 21%) /* #003b6d Midnight Blue */;
-    --clr-primary-300: hsl(208, 100%, 15%) /* #00294d */;
+    /* https://htmlcolors.com/hsl-to-hex */
+    --clr-primary-500: hsl(187, 100%, 40%) /* #00b4cc */;
+    --clr-primary-400: hsl(187, 100%, 35%) /* #009eb3 */;
+    --clr-primary-300: hsl(187, 100%, 30%) /* #008799 */;
 
-    --clr-secondary-500: hsl(210, 50%, 65%) /* #79a6d2 */;
-    --clr-secondary-400: hsl(210, 50%, 60%) /* #6699cc Blue Sky */; 
-    --clr-secondary-300:  hsl(210, 50%, 55%) /* #538cc6 */;
+    --clr-secondary-500: hsl(222, 68%, 78%) /* #a1b8ed */;
+    --clr-secondary-400: hsl(222, 68%, 73%) /* #8BA6E9  */; 
+    --clr-secondary-300:  hsl(222, 68%, 68%) /* #7697e5 */;
 
-    --clr-primaryaccent-500: hsl(0, 0%, 45%) /* #737373 */;
-    --clr-primaryaccent-400: hsl(0, 0%, 40%) /* #676767 Dim Gray */;
-    --clr-primaryaccent-300: hsl(0, 0%, 35%) /* #595959 */;
-    --clr-primaryaccent-200: hsl(0, 0%, 30%);
-    --clr-primaryaccent-100: hsl(0, 0%, 15%);
+    --clr-primaryaccent-500: hsl(10, 59%, 99%) /* #fefbfb */;
+    --clr-primaryaccent-400: hsl(10, 59%, 97%) /* #fcf4f3 */;
+    --clr-primaryaccent-300: hsl(10, 59%, 92%) /* #F7E4E0 */;
+    --clr-primaryaccent-200: hsl(10, 59%, 87%) /* #f1d1ca */;
+    --clr-primaryaccent-100: hsl(10, 59%, 82%) /* #ecbfb6 */;
 
     --clr-secondaryaccent-500: hsl(0, 0%, 80%) /* #cccccc */;
     --clr-secondaryaccent-400: hsl(0, 0%, 74%) /* #bdbdbd Silver */;
@@ -273,26 +274,12 @@ main {
     letter-spacing: -0.01em;
 }
 
-.resourceList > li > a {
-    color: var(--clr-neutral-900);
-    text-decoration: underline;
-    display: inline-block;
-    color: var(--clr-primary-400);
-    transform-origin: center;
-}
-
-.resourceList > li > a:hover {
-    transform: scale(1.1);
-    color: var(--clr-neutral-100);
-    background-color: var(--clr-primary-400);
-}
-
-.consultationButtonDiv {
+.bookNowButtonDiv {
     text-align: center;
     padding-bottom: 3rem;
 }
 
-.scheduleConsultationButton, .submitFormButton {
+.bookNowButton, .submitFormButton {
     border-radius: 100vmax;
     padding: 0.75em 1.5em;
     background-color: var(--clr-primary-400);
@@ -303,7 +290,7 @@ main {
     transform-origin: center;
 }
 
-.scheduleConsultationButton:hover, .submitFormButton:hover {
+.bookNowButton:hover, .submitFormButton:hover {
     transform: scale(1.2);
     color: var(--clr-neutral-900);
     background-color: var(--clr-secondary-400);   
@@ -311,7 +298,7 @@ main {
 
 /* Form Styling */
 
-#contactFormHeader {
+#bookingFormHeader {
     justify-self: center;
     align-items: center;
     align-content: center;
@@ -322,12 +309,12 @@ input, button, select, textarea {
     font: inherit;
 }
 
-#contactForm {
+#bookingForm {
     display: grid;
     gap: 1rem;
 }
 
-#contactForm > section {
+#bookingForm > section {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -354,13 +341,7 @@ input, button, select, textarea {
     align-items: center;
 }
 
-.contactImages {
-    height: auto;
-    width: min(500px, 100%);
-    margin: 0 auto
-}
-
-.contactText {
+.bookingText {
     text-align: center;
 }
 
