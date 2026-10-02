@@ -211,12 +211,6 @@ main {
     background-color: var(--clr-primary-400);
 }
 
-.images {
-    padding: 8px;
-    max-width: 250px;
-    height: auto;
-}
-
 #islandPreview {
     width: 100%;
 }
@@ -226,14 +220,35 @@ main {
     font-size: var(--size-800);
     padding-top: 1rem;
     padding-left: 1rem;
-    height: 50rem;
     width: 100%;
+    aspect-ratio: 25 / 14;
     background-image: url(../images/tanitiIslandPreview.jpg);
     background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .centeredImage img, .centeredImages img {
     margin: 0 auto;
+}
+
+/* Image Styles */
+
+.images {
+    padding: 8px;
+    max-width: 250px;
+    height: auto;
+}
+
+.tanitiGlimpseImages {
+    max-width: 250px;
+    max-height: 500px;
+}
+
+.tanitiGlimpseImageContainer {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
 /* Header Styles */
@@ -346,6 +361,42 @@ main {
     background-color: var(--clr-secondary-400);   
 }
 
+.tanitiGlimpse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+}
+
+.tanitiGlimpseText {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.tanitiGlimpseText > p {
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
+.tanitiGlimpseTextHeader {
+    font-size: var(--size-700);
+}
+
+.tanitiGlimpseTextDescription {
+    font-size: var(--size-600);
+
+}
+
+.tanitiGlimpseTextDescription, .tanitiGlimpseTextHeader {
+    line-height: normal;
+}
+
+.whiteText {
+    color: var(--clr-neutral-100);
+}
+
 /* Form Styling */
 
 #bookingFormHeader {
@@ -380,7 +431,7 @@ input, button, select, textarea {
     gap: 1rem;
 }
 
-.evenColumns > section > div {
+.evenColumns > div {
     gap: 0.125rem;
 }
 
