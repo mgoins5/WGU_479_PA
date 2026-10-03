@@ -232,6 +232,12 @@ main {
     margin: 0 auto;
 }
 
+.sectionHeader {
+    display: flex;
+    font-size: var(--fs-500);
+    justify-content: center;
+}
+
 /* Image Styles */
 
 .images {
@@ -249,6 +255,16 @@ main {
     display: flex;
     gap: 1rem;
     justify-content: center;
+}
+
+.firstPageSectionImages, .firstPageSecondSectionImages {
+    max-width: 250px;
+}
+
+.firstPageSecondSectionImagesContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
 }
 
 /* Header Styles */
@@ -359,6 +375,11 @@ main {
     transform: scale(1.2);
     color: var(--clr-neutral-900);
     background-color: var(--clr-secondary-400);   
+}
+
+.firstPageSection {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
 }
 
 .tanitiGlimpse {
