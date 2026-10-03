@@ -466,12 +466,13 @@ input, button, select, textarea {
     gap: 1rem;
 }
 
-.evenColumns {
+.formColumns {
     display: grid;
+    grid-template-columns: 2fr 3fr;
     gap: 1rem;
 }
 
-.evenColumns > div {
+.formColumns > div {
     gap: 0.125rem;
 }
 
@@ -494,11 +495,21 @@ input:user-invalid {
     outline-color: var(--clr-error);
 }
 
-form > section > div > input {
+form > div > input {
     border-radius: 100vmax;
     border: none;
     padding: 5px;
+    margin: 2px;
     outline: 3px solid var(--clr-primaryaccent-500);
+}
+
+form > div > label {
+    padding: 5px;
+    margin: 2px;
+}
+
+form > div > select {
+    margin: 5px;
 }
 
 .formSuccess {
@@ -529,8 +540,21 @@ form > section > div > input {
 
 .clearFormButton:hover {
     transform: scale(1.2);
-    color: var(--clr-secondary-400);
-    background-color: var(--clr-neutral-900);
+    color: var(--clr-neutral-100);
+    background-color: var(--clr-error);
+}
+
+.leftColumn, .rightColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.leftColumn {
+    text-align: right;
+}
+
+.rightColumn {
+    align-items: left;
 }
 
 /* Footer Styling */
@@ -548,9 +572,6 @@ form > section > div > input {
 /* Smaller screen styling */
 
 @media only screen and (min-width: 1036px) {
-    .evenColumns {
-        grid-template-columns: 1fr 1fr;
-    }
     
 }
 
