@@ -439,31 +439,8 @@ main {
 
 /* Form Styling */
 
-#bookingFormHeader {
-    justify-self: center;
-    align-items: center;
-    align-content: center;
-    text-align: center;
-}
-
-input, button, select, textarea {
+input, button, select {
     font: inherit;
-}
-
-#bookingForm {
-    display: grid;
-    gap: 1rem;
-}
-
-#bookingForm > section {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-}
-
-.formGroup {
-    display: grid;
-    gap: 1rem;
 }
 
 .formColumns {
@@ -474,17 +451,6 @@ input, button, select, textarea {
 
 .formColumns > div {
     gap: 0.125rem;
-}
-
-.formButtons {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-}
-
-.bookingText {
-    text-align: center;
 }
 
 input:user-valid {
@@ -518,7 +484,8 @@ form > div > select {
     border-radius: 100vmax;
     background-color: var(--clr-success);
     font-weight: var(--fw-semi-bold);
-    padding: 0.5rem 1rem;
+    padding-block: 0.5rem;
+    margin-bottom: 0.5rem;
     color: white;
 }
 

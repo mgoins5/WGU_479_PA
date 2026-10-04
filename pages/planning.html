@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link href="../css/reset.css" rel="stylesheet" />
         <link href="../css/style.css" rel="stylesheet" />
+        <script src="../js/authorizePayment.js" defer></script>
     </head>
 
 
@@ -33,7 +34,7 @@
     </header>
     </div>
     <article class="content | bg-primaryaccent-400 ">
-        <form action="" method="post" enctype="text/plain" id="contactForm" class="formColumns | padding-inline-600">
+        <form action="" method="post" enctype="text/plain" id="paymentForm" class="formColumns | padding-inline-600">
             <div class="leftColumn">
                 <label for="name">*Name:</label>
                 <label for="email">*Email:</label>
@@ -55,37 +56,38 @@
                 <input name="email" class="needsChecked" placeholder="Enter email address" id="email" type="email" required/>
                 <input name="confirmEmail" class="needsChecked" placeholder="Enter email address" id="confirmEmail" type="email" required/>
                 <input name="number" placeholder="Enter phone number" id="number" type="tel"/>
-                <select name="toIslandTransportation" required>
-                    <option value="airplane">Airplane</option>
-                    <option value="crusieShip">Cruise Ship</option>
+                <select name="toIslandTransportation" id="toIslandSelect" required>
+                    <option value="airplane" data-price="200">Airplane</option>
+                    <option value="crusieShip" data-price="0">Cruise Ship</option>
                 </select>
-                <select name="onIslandTransportation" required>
-                    <option value="none">None</option>
-                    <option value="bike">Bike</option>
-                    <option value="publicTransport">Public Transportation</option>
-                    <option value="rentalCar">Car Rental</option>
-                    <option value="shareCar">Car Share</option>
-                    <option value="hotelShuttle">Hotel Shuttle</option>
+                <select name="onIslandTransportation" id="onIslandSelect" required>
+                    <option value="none" data-price="0">None</option>
+                    <option value="bike" data-price="0">Bike</option>
+                    <option value="publicTransport" data-price="0">Public Transportation</option>
+                    <option value="rentalCar" data-price="50">Car Rental</option>
+                    <option value="shareCar" data-price="0">Car Share</option>
+                    <option value="hotelShuttle" data-price="0">Hotel Shuttle</option>
                 </select>
-                <select name="lodging" required>
-                    <option value="hostel">Hostel</option>
-                    <option value="hotel">Hotel</option>
-                    <option value="bedAndBreakfast">Bed & Breakfast</option>
-                    <option value="resprt">Resort</option>
+                <select name="lodging" id="lodgingSelect" required>
+                    <option value="hostel" data-price="10">Hostel</option>
+                    <option value="hotel" data-price="50">Hotel</option>
+                    <option value="bedAndBreakfast" data-price="50">Bed & Breakfast</option>
+                    <option value="resort" data-price="250">Resort</option>
                 </select>
                 <input name="numberOfGuests" class="needsChecked" placeholder="Enter number of guests" id="numberOfGuests" type="number" required/>
                 <input name="lengthOfStay" class="needsChecked" placeholder="Enter number of nights" id="lengthOfStay" type="text" required/>
-                <label name="totalCost" placeholder="$0.00" id="totalCost" type="currency">$0.00</label>
-                <input name="cardName" class="needsChecked" placeholder="Enter name on card" id="text" type="text" required/>
-                <input name="cardNumber" class="needsChecked" placeholder="Enter card number" id="number" type="number" required/>
-                <input name="cvv" class="needsChecked" placeholder="Enter CVV" id="email" type="password" required/>
-                <input name="cardExpirationDate" class="needsChecked" placeholder="01/2001" id="number" type="month" required/>
+                <label for="totalCost" name="totalCost" id="totalCost" type="currency">$0.00</label>
+                <input name="cardName" class="needsChecked" placeholder="Enter name on card" id="cardName" type="text" required/>
+                <input name="cardNumber" class="needsChecked" placeholder="Enter card number" id="cardNumber" type="number" required/>
+                <input name="cvv" class="needsChecked" placeholder="Enter CVV" id="cvv" type="password" required/>
+                <input name="cardExpirationDate" class="needsChecked" placeholder="01/2001" id="cardExpirationDate" type="month" required/>
             </div>
         </form>
     </article>
     <div class="bookNowButtonDiv | bg-primaryaccent-400 | padding-block-600">
         <!-- Form buttons here -->
-        <input class="submitFormButton" type="submit" id="submit" onclick="submitContactForm(event)" value="Authorize Payment" />
+        <p class="padding-block-600" id="formMessage"></p>
+        <input class="submitFormButton" type="submit" id="submit" onclick="submitPaymentForm(event)" value="Authorize Payment" />
         <input class="clearFormButton" type="button" onclick="clearForm()" id="clear" value="Clear" />
     </div>
     <footer class="footer | bg-primary-400">
