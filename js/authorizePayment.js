@@ -1,5 +1,6 @@
 function clearForm() {
     document.getElementById("paymentForm").reset();
+    totalLabel.textContent = "$0.00";
 }
 
 function submitPaymentForm(event) {
