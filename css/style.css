@@ -183,6 +183,7 @@ html {
     overflow: -moz-scrollbars-vertical; 
     overflow-y: scroll;
     background-color: black;
+    scroll-behavior: smooth;
 }
 
 main {
